@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="it_school.sumdu.edu.ua.tanks.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favtank"
+        android:name="it_school.sumdu.edu.ua.tanks.ui.favtank.FavFragment"
+        android:label="@string/menu_fav_tank"
+        tools:layout="@layout/fragment_favtank" />
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="it_school.sumdu.edu.ua.tanks.ui.logout.LogoutFragment"
+        android:label="Log out"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>
